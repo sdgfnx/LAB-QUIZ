@@ -1,0 +1,107 @@
+/* General body styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    margin: 0;
+    padding: 0;
+}
+
+/* Center container */
+.container {
+    width: 40%;
+    margin: 80px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+/* Add hover effect to the container */
+.container:hover {
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+/* Form heading styling */
+h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+/* Label styling */
+label {
+    display: block;
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+/* Input fields */
+input[type="text"], input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    background-color: #f9f9f9;
+    transition: all 0.2s ease;
+}
+
+/* Focus effect for input fields */
+input[type="text"]:focus, input[type="number"]:focus {
+    border-color: #8ab7ff;
+    outline: none;
+    background-color: #fff;
+    box-shadow: 0 0 8px rgba(138, 183, 255, 0.5);
+}
+
+/* Submit button styling */
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for submit button */
+input[type="submit"]:hover {
+    background-color: #218838;
+}
+
+/* Style for the success message */
+p {
+    font-size: 18px;
+    color: #28a745;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Responsive design for mobile */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    input[type="text"], input[type="number"], input[type="submit"] {
+        font-size: 14px;
+    }
+}
